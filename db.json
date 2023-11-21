@@ -1,0 +1,14 @@
+{
+    "usuarios":[
+        {
+            "nome": "Vinicius Barros",
+            "email": "vinicius@fiap.com.br",
+            "password":1234
+        },
+        {
+            "nome": "Lucas Speranzini",
+            "email": "rm98297@fiap.com.br",
+            "password":"LUCAS"
+        }
+    ]
+}
