@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Track (fundo do scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #1a1a2e; /* Cor de fundo do scrollbar */
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: white; /* Cor da barra de rolagem */
+  border-radius: 6px; /* Borda arredondada da barra */
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: rgb(255, 255, 255);
+}
+body{
+  background: linear-gradient(180deg, #0081AB 31.94%, #509DB6 62.07%, #004156 100%);
+}
+

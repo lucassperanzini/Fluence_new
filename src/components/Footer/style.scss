@@ -1,0 +1,26 @@
+footer{
+    display: flex;
+    justify-content: center;
+    // padding: 0 15%;
+    margin-top: 15dvh;
+    .divSociais{
+        margin-right: 20%;
+        p{
+            font-weight: lighter;
+            font-size: 40px;
+        }
+    }
+    .divInfos{
+        p{
+            font-weight: bold;
+        }
+        .ulFooter{
+            padding: 0;
+            list-style: none;
+            margin-right: 2em;
+            li{
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+}
