@@ -1,0 +1,46 @@
+main{
+    background: white;
+    height: 100vh;
+
+    .headerUser{
+        width: 100%;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10%;
+        .divUlHeader{
+            ul{
+                display: flex;
+                align-items: center;
+                .liSair{
+                    margin-right: 3em;
+                }
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 600;
+                    }
+                    .iconLogout{
+                        width: 35px;
+                    }
+                    .fotoUser{
+                        width:80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionBoasVindas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+        div{
+            width: 80%;
+            color:black;
+        }
+    }
+
+}

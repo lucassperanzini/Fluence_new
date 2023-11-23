@@ -11,7 +11,7 @@ export default function Header() {
                 <nav>
                     <div className='divOpcoes'>
                         <img className="logo" src={Logo} alt="logo fluence" />
-                           <img className="hamburger" src={hamburguer} alt=""  />
+                        <img className="hamburger" src={hamburguer} alt=""  />
                         
                         <div className="divUL">
             
@@ -25,7 +25,7 @@ export default function Header() {
                         
                             <ul className="ulLogin">
                                 <li><button><Link to={"/cadastro"}>Cadastra-se</Link></button></li>
-                                <li><Link to={"/login"} href="">Login</Link></li>
+                                <li><Link to={"/login"}>Login</Link></li>
                             </ul>
                         </div>
 

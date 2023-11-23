@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./routes/Home.jsx"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Login from './routes/Login.jsx';
+import Dashboard from './routes/Dashboard/Dashboard.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/login' element={<Login />}></Route>
+        <Route path='/:nome' element={<Dashboard/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

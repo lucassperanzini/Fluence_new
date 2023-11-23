@@ -35,7 +35,7 @@ function Login() {
           const token = generateToken();
           localStorage.setItem("user", JSON.stringify(userWithoutPassword));
           localStorage.setItem("token", JSON.stringify(token));
-          navigate("/");
+          navigate(`/${found.nome}`);
         } else {
           alert("Senha incorreta!");
         }
