@@ -1,0 +1,56 @@
+.divCard{
+    margin:2% 10%;
+    padding: 1%;
+    background-color: #38A8CC;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 30%;
+
+    .mensagemHidratacao{
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .containerItens{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .circle {
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            background-color: rgb(255, 55, 55);
+            border: 6px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+       
+            
+    
+            .porcentagem{
+                font-size: 3em;
+
+                font-weight: bold;
+               
+                
+                color: rgb(255, 255, 255);
+    
+            }
+
+            .meta{
+                text-align: center;
+                width: 70%;
+                font-size: 0.8em;
+            };
+          }
+    
+          .imagemMeta{
+            width: 50%;
+          }
+          
+    }
+
+}

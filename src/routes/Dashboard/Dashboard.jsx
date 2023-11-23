@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { Link, useNavigate, useParams} from "react-router-dom";
 import logoutIcon from "../../../public/assets/Logout.png"
 import Usuario from "../../../public/assets/user.png"
+import Card from "./Cards/cardPorcentagemMeta";
+
 function Dashboard(){
     const navigate = useNavigate();
     const user = localStorage.getItem("user");
@@ -41,6 +43,8 @@ function Dashboard(){
                     <h2>Como você está? Vamos fazer uma revisão diária!</h2>
                 </div>
             </section>
+
+            <Card porcentagem={"12"}/>
         </main>
     )
 }
