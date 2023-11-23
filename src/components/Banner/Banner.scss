@@ -1,6 +1,9 @@
 $azul-claro: #027ea6;
 
 .divContainer {
+  @media screen and (max-width: 415px) {
+    margin-bottom: 2em;
+}
   .text-focus-in {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
       both;
@@ -114,16 +117,32 @@ $azul-claro: #027ea6;
       font-size: 2.5em;
     }
     @media screen and (max-width: 1020px) {
-      font-size: 2em;
+      // font-size: 2em;
       width: 40%;
     }
-    @media screen and (max-width: 730px) {
-      top: 10%;
-      font-size: 1.7em;
+    @media screen and (max-width: 890px) {
+      
       width: 50%;
+    }
+    @media screen and (max-width: 790px) {
+      
+      font-size: 2.3em;
+      width: 50%;
+    }
+    @media screen and (max-width: 660px) {
+      width: 60%;
     }
     @media screen and (max-width: 570px) {
       width: 90%;
+    }
+    @media screen and (max-width: 514px) {
+      top: 8%;
+    }
+    @media screen and (max-width: 490px) {
+      font-size: 1.8em;
+    }
+    @media screen and (max-width: 420px) {
+      font-size: 1.5em;
     }
   }
   p {
@@ -132,27 +151,39 @@ $azul-claro: #027ea6;
     width: 30%;
     font-size: 20px;
     font-weight: lighter;
+    @media screen and (max-width: 1600px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 1290px) {
+      margin-top: 1em;
+    }
     @media screen and (max-width: 1120px) {
       font-size: 18px;
     }
-    @media screen and (max-width: 1050px) {
-      margin-top: 0.8em;
+    @media screen and (max-width: 1030px) {
+      top:50%;
     }
     @media screen and (max-width: 1050px) {
       font-size: 16px;
       width: 35%;
     }
-    @media screen and (max-width: 730px) {
+    @media screen and (max-width: 900px) {
+     top:52%
+    }
+    @media screen and (max-width: 790px) {
       width: 40%;
-      font-size: 13px;
+      font-size: 15px;
     }
-    @media screen and (max-width: 570px) {
-      width: 90%;
-      font-size: 13px;
+    @media screen and (max-width: 600px) {
+      width: 80%;
     }
-    @media screen and (max-width: 455px) {
-     top:40%
+    @media screen and (max-width: 490px) {
+      top: 40%;
     }
+    @media screen and (max-width: 430px) {
+     font-size: 14px;
+    }
+    
   }
   button {
     @extend .texto-compartilhado;
@@ -164,9 +195,12 @@ $azul-claro: #027ea6;
     width: 10%;
     padding: 12px 10px;
     color: $azul-claro;
-    @media screen and (max-width: 1465px) {
+    @media screen and (max-width: 1480px) {
       margin-top: 2em;
       font-size: 18px;
+    }
+    @media screen and (max-width: 1290px) {
+      top: 65%;
     }
     @media screen and (max-width: 1225px) {
       margin-top: 3em;
@@ -181,12 +215,18 @@ $azul-claro: #027ea6;
       margin-top: 5em;
      
     }
-    @media screen and (max-width: 660px) {
-      top: 50%;
+    @media screen and (max-width: 670px) {
+      top: 66%;
     }
-    @media screen and (max-width: 529px) {
-      top: 40%;
+    @media screen and (max-width: 600px) {
+      top: 60%;
       width: 85%;
+    }
+    @media screen and (max-width: 510px) {
+      top: 55%;
+    }
+    @media screen and (max-width: 490px) {
+      top: 50%;
     }
   }
   span {

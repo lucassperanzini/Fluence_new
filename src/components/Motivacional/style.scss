@@ -1,46 +1,71 @@
-.sectionMotivacional{
-    width: 100%;
-    .divConteudo{
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
+.sectionMotivacional {
+  width: 100%;
+  .divConteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-        .divTitulo{
+    .divTitulo {
+      width: 100%;
+      margin-top: 8%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .tituloMotivacional {
+        width: 62.5%;
+        font-size: 47px;
+        font-style: italic;
+        @media screen and (max-width: 920px) {
             width: 100%;
-            margin-top: 8%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            .tituloMotivacional{
-                width: 62.5%;
-                font-size: 47px;
-                font-style: italic;
-            }
+            text-align: center;
         }
-
-        .divMotivacional{
-          margin-top: 2%;
-          width: 100% !important;
-           display: flex;
-          justify-content: center;
-            .textoMotivacional{
-                font-size: 1.44em;
-                font-weight: lighter;
-                width:20%;
-                
-                
-            }
-            .imagemMotivacional{
-                border:3px solid white;
-                border-radius: 5px;
-                margin-left: 3em;
-                margin-top: 0.8em;
-                width:40%;
-            }
+        @media screen and (max-width: 620px) {
+            font-size: 40px;
         }
+      }
     }
+
+    .divMotivacional {
+      margin-top: 2%;
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: 920px) {
+        flex-direction: column-reverse;
+        align-items: center;
+       }
+      .textoMotivacional {
+        font-size: 1.44em;
+        font-weight: lighter;
+        width: 20%;
+        @media screen and (max-width: 920px) {
+            width: 40%;
+            margin-top: 2em;
+        }
+        @media screen and (max-width: 860px) {
+            width: 60%;
+            margin-top: 2em;
+        }
+        @media screen and (max-width: 510px) {
+            width: 70%;
+        }
+      }
+      .imagemMotivacional {
+        border: 3px solid white;
+        border-radius: 5px;
+        margin-left: 3em;
+        margin-top: 0.8em;
+        width: 40%;
+        @media screen and (max-width: 920px) {
+            margin: 0;
+        }
+        @media screen and (max-width: 860px) {
+            width: 60%;
+        }
+        @media screen and (max-width: 510px) {
+            width: 70%;
+        }
+      }
+    }
+  }
 }
-
-
