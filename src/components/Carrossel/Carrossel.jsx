@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import ItemCarrossel from "../ItemCarrossel/ItemCarrossel";
+import ItemCarrossel from "./ItemCarrossel/ItemCarrossel";
 import garrafa from "../../../public/assets/garrafa.png";
 import celular from "../../../public/assets/celular.png";
 import lembrete from "../../../public/assets/lembrete.png";
@@ -21,7 +21,8 @@ function Carrosel() {
     "Pacientes recebem lembretes personalizados dos horários ideias para a ingestão de água, tudo acessível através de um aplicativo fácil de usar.";
   const textoBanner4 =
     "Médicos podem acessar informações detalhadas de hidratação dos pacientes, facilitando um acompanhamento preciso e cuidado personalizado";
-
+  const textoBotao ="Saiba mais"
+  
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
@@ -32,7 +33,7 @@ function Carrosel() {
         <ItemCarrossel
           titulo="Monitoramento com garrafa inteligente!"
           texto={textoBanner1}
-          botao="Saiba mais"
+          botao={textoBotao}
           imagem={garrafa}
         />
       </Carousel.Item>
@@ -40,7 +41,7 @@ function Carrosel() {
         <ItemCarrossel
           titulo="Acompanhe quanto você bebe de água!"
           texto={textoBanner2}
-          botao="Saiba mais"
+          botao={textoBotao}
           imagem={celular}
         />
       </Carousel.Item>
@@ -49,7 +50,7 @@ function Carrosel() {
           titulo="Lembretes 
           personalizados"
           texto={textoBanner3}
-          botao="Saiba mais"
+          botao={textoBotao}
           imagem={lembrete}
         />
       </Carousel.Item>
@@ -57,7 +58,7 @@ function Carrosel() {
         <ItemCarrossel
           titulo="Monitoramento médico"
           texto={textoBanner4}
-          botao="Saiba mais"
+          botao={textoBotao}
           imagem={medico}
         />
       </Carousel.Item>
