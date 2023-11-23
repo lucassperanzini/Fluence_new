@@ -1,0 +1,35 @@
+
+.conteudoFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .copo{
+        width: 30%;
+    }
+
+    .containerHorariosQuantidade{
+        
+        margin-left: 8%;
+
+        .horario{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .containerML{
+            margin-top: 10%;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #027EA6;
+
+            .quantidadeML{
+                font-size: 2.5em;
+                font-weight: 800;
+            }
+        }
+
+    }
+    
+
+
+}
