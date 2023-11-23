@@ -17,7 +17,7 @@ function Diferenciais() {
         </div>
         <div>
           <img src={analise} alt="" />
-          <p>Analise de dados para maior precisão no seu tratamento</p>
+          <p>Analise de dados para maior precisão no seu acompanhamento</p>
         </div>
       </div>
     </section>

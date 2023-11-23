@@ -86,7 +86,6 @@ $azul-claro: #027ea6;
       opacity: 1;
     }
   }
-
   position: relative;
   .imagemBanner {
     width: 100%;
@@ -106,6 +105,10 @@ $azul-claro: #027ea6;
     @extend .texto-compartilhado;
     top: 16%;
     font-size: 60px;
+    @media screen and (max-width: 1386px) {
+      font-size: 3em;
+
+  }
   }
   p {
     @extend .texto-compartilhado;
@@ -113,6 +116,10 @@ $azul-claro: #027ea6;
     width: 30%;
     font-size: 20px;
     font-weight: lighter;
+     @media screen and (max-width: 1386px) {
+      font-size: 1em;
+
+  }
   }
   button {
     @extend .texto-compartilhado;
