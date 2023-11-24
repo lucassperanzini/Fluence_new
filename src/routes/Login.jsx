@@ -31,7 +31,7 @@ function Login() {
         if (found.password === data.password) {
           alert(`Seja bem-vindo (a) ${found.nome}`);
           // É uma má prática de segurança usar 'delete' para remover a senha. Em vez disso, omita-a ao salvar.
-          const { password, ...userWithoutPassword } = found;
+          const {...userWithoutPassword } = found;
           const token = generateToken();
           localStorage.setItem("user", JSON.stringify(userWithoutPassword));
           localStorage.setItem("token", JSON.stringify(token));
@@ -68,6 +68,7 @@ function Login() {
   }
   
   return (
+    <>
    <div className="login-form-container">
      <form onSubmit={submit}>
 
@@ -98,6 +99,7 @@ function Login() {
        <button type="submit">Login</button>
      </form>
    </div>
+ </>
  );
 }
 

@@ -1,14 +1,28 @@
 {
-    "usuarios":[
-        {
-            "nome": "Vinicius Barros",
-            "email": "vinicius@fiap.com.br",
-            "password":"P"
-        },
-        {
-            "nome": "Lucas Speranzini",
-            "email": "rm98297@fiap.com.br",
-            "password":"LUCAS"
-        }
-    ]
+  "usuarios": [
+    {
+      "nome": "Lucas Speranzini",
+      "peso": "80",
+      "altura": "200",
+      "email": "Lucas@fiap.com.br",
+      "password": "mudar123",
+      "id": 1
+    },
+    {
+      "nome": "Joao",
+      "peso": "75",
+      "altura": "175",
+      "email": "joao@fiap.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "nome": "Vinicius Oliveira de Barros",
+      "peso": "60",
+      "altura": "176",
+      "email": "vinicius@fiap.com.br",
+      "password": "1234",
+      "id": 3
+    }
+  ]
 }

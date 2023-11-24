@@ -18,7 +18,7 @@ function Carrosel() {
   const textoBanner2 =
     "A desidratação pode ser um desafio sério para a saúde. Garanta que você ou seus entes queridos permaneçam devidamente hidratados.";
   const textoBanner3 =
-    "Pacientes recebem lembretes personalizados dos horários ideias para a ingestão de água, tudo acessível através de um aplicativo fácil de usar.";
+    "Pacientes recebem lembretes personalizados dos horários ideiais para a ingestão de água, tudo acessível através de um aplicativo fácil de usar.";
   const textoBanner4 =
     "Médicos podem acessar informações detalhadas de hidratação dos pacientes, facilitando um acompanhamento preciso e cuidado personalizado";
   const textoBotao ="Saiba mais"
