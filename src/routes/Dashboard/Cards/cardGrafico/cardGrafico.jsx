@@ -1,8 +1,15 @@
-import "./style.scss";
 import { useEffect, useState } from "react";
 import { format } from "date-fns";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
-
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 function CardGrafico() {
   const [historicoConsumo, setHistoricoConsumo] = useState([]);
@@ -35,8 +42,9 @@ function CardGrafico() {
   return (
     <div className="divCard">
       <h2 className="mensagemHidratacao">Relátorio de hidratação (dia)</h2>
-      <LineChart
-          width={500}
+      <ResponsiveContainer width="100%" minHeight="30vh">
+        <LineChart
+          width={700}
           height={250}
           data={dataConsumo}
           margin={{
@@ -51,8 +59,14 @@ function CardGrafico() {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="valores" stroke="#fff" activeDot={{ r: 8 }} />
+          <Line
+            type="monotone"
+            dataKey="valores"
+            stroke="#fff"
+            activeDot={{ r: 8 }}
+          />
         </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 }

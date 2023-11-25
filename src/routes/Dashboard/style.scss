@@ -1,6 +1,6 @@
 main{
     background: white;
-    height: 100vh;
+    min-height: 100vh;
     //  margin:2% 5%;
      
 
@@ -52,6 +52,9 @@ main{
       display: flex;
       
       flex-wrap: wrap;
+    //   @media screen and (max-width: 1680px) {
+    //    flex-direction: column;
+    // }
       
      }
 

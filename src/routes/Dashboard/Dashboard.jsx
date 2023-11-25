@@ -6,7 +6,7 @@ import logoutIcon from "../../../public/assets/Logout.png";
 import Usuario from "../../../public/assets/user.png";
 import CardPorcentagem from "./Cards/CardPorcentagem/cardPorcentagemMeta";
 import CardGrafico from "./Cards/cardGrafico/cardGrafico";
-import CardAguaPeriodo from "./Cards/cardAguaPeríodo/cardAguaPeriodo";
+// import CardAguaPeriodo from "./Cards/cardAguaPeríodo/cardAguaPeriodo";
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -18,7 +18,10 @@ function Dashboard() {
       navigate("/login");
     }
   };
-
+  const logout = () =>{
+    localStorage.clear()
+    navigate("/");
+  }
   const { nome } = useParams();
 
   useEffect(() => {
@@ -31,8 +34,8 @@ function Dashboard() {
         <div className="divUlHeader">
           <ul>
             <li className="liSair">
-              <Link to={"/"}>
-                Sair <img className="iconLogout" src={logoutIcon} alt="" />
+              <Link>
+                Sair <img className="iconLogout" src={logoutIcon} alt="" onClick={logout}/>
               </Link>
             </li>
             <li>
@@ -52,7 +55,7 @@ function Dashboard() {
     <div className="containerCards">
       <CardPorcentagem porcentagem={"36"} />
       <CardGrafico />
-      <CardAguaPeriodo/>
+      {/* <CardAguaPeriodo/> */}
     </div>
       
     </main>

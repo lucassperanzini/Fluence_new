@@ -4,8 +4,10 @@
     background-color: #38A8CC;
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-    width: 30%;
-
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .mensagemHidratacao{
         font-size: 1.6em;
         text-align: center;
@@ -17,8 +19,8 @@
         align-items: center;
     
         .circle {
-            width: 175px;
-            height: 175px;
+            width: 40%;
+            height: 100%;
             border-radius: 50%;
             background-color: rgb(255, 55, 55);
             border: 6px solid white;
@@ -29,7 +31,7 @@
 
     
             .porcentagem{
-                font-size: 3em;
+                font-size: 2em;
 
                 font-weight: bold;
                
@@ -40,8 +42,8 @@
 
             .meta{
                 text-align: center;
-                width: 70%;
-                font-size: 0.8em;
+                width: 80%;
+                font-size: 90%;
             };
           }
     
